@@ -223,13 +223,13 @@ The optimized Random Forest model was evaluated on the test set to assess its ge
    
      accuracy                           0.82       160
     macro avg       0.74      0.75      0.75       160
- weighted avg       0.82      0.82      0.82       160
+    weighted avg       0.82      0.82      0.82       160
     ```
 
 #### **Interpretation of Results**
 - **Class 0 (Non-ASD)**: The model performed exceptionally well in predicting non-ASD cases, achieving a precision of 89% and recall of 87%.  
 - **Class 1 (ASD)**: While the precision (59%) and recall (64%) for ASD cases are lower, they are notable given the dataset's imbalance. The F1-score of 61% highlights the need for further improvements in detecting ASD cases without sacrificing overall performance.  
-- **Balanced Metrics**: The weighted averages indicate a strong overall performance while maintaining sensitivity to class imbalance.
+- **Balanced Metrics**: The weighted averages indicate a strong overall performance.
 
 ---
 
@@ -237,8 +237,7 @@ The optimized Random Forest model was evaluated on the test set to assess its ge
 
 ### **Key Findings**
 1. **Best Model**: The Random Forest Classifier outperformed other models, achieving a cross-validation accuracy of **93%** and a test set accuracy of **81.88%**. Its ensemble learning approach proved effective in capturing complex relationships within the dataset.  
-2. **Imbalanced Dataset**: The dataset contained a higher proportion of non-ASD cases, which influenced precision and recall for ASD predictions. This highlights the need for strategies like SMOTE (Synthetic Minority Oversampling Technique) to address imbalances.  
-3. **Feature Importance**: Random Forest inherently identifies the most influential features in its predictions. These insights can inform healthcare providers about the most critical indicators for autism screening.
+2. **Feature Importance**: Random Forest inherently identifies the most influential features in its predictions. These insights can inform healthcare providers about the most critical indicators for autism screening.
 
 ### **Insights for Implementation**
 - **Clinical Relevance**: The model’s predictions provide a reliable foundation for screening children during early development, enabling proactive interventions.  
@@ -251,10 +250,8 @@ The optimized Random Forest model was evaluated on the test set to assess its ge
 
 To achieve the business objective of improving early autism detection and enhancing healthcare outcomes, the following recommendations are provided based on the project findings and insights:
 
-1. **Enhancing Early Screening Protocols**:  
-   - **Insight**: Random Forest demonstrated the best performance with a cross-validation accuracy of 93% and test accuracy of 82%. However, the recall for ASD-positive cases (64%) indicates room for improvement in identifying individuals at higher risk.  
-   - **Recommendation**:  
-     - Focus on optimizing recall by using alternative sampling methods such as **ADASYN** or **ensemble techniques** specifically designed for imbalanced datasets.  
+1. **Enhancing Early Screening Protocols**:   
+   - **Recommendation**:   
      - Implement the model in pilot programs targeting early childhood health assessments to validate its utility in clinical environments.  
      - Refine the model using incremental data from real-world clinical applications to adapt to varying population needs.
 
@@ -293,10 +290,6 @@ To achieve the business objective of improving early autism detection and enhanc
    - **Recommendation**:  
      - Establish a continuous feedback loop to update the model with new data, ensuring sustained accuracy and relevance over time.  
      - Monitor real-world performance metrics (e.g., precision, recall) to identify areas for further optimization.
-
----
-
-These recommendations directly address the business objectives by improving early autism detection, supporting healthcare providers with actionable insights, and enabling effective interventions. Implementing these strategies will empower NeuroPredictive Solutions to achieve its mission of enhancing autism screening protocols and fostering better outcomes for families and children.
 
 ---
 
