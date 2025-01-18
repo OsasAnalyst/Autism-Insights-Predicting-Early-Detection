@@ -168,7 +168,7 @@ Three machine learning models were selected for initial training and evaluation:
 2. **Random Forest Classifier**  
 3. **XGBoost Classifier**
 
-These models were chosen for their ability to handle classification tasks effectively, even with imbalanced datasets. A **Stratified 5-Fold Cross-Validation** was employed to ensure that each fold preserved the class distribution, improving the reliability and generalizability of model evaluations.
+These models were chosen for their ability to handle classification tasks effectively. A **Stratified 5-Fold Cross-Validation** was employed to ensure that each fold preserved the class distribution, improving the reliability and generalizability of model evaluations.
 
 #### **Cross-Validation Results**
 The average cross-validation accuracy for each model was as follows:
